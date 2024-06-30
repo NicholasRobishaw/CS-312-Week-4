@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "undefined/subscriptions/43f3e647-1549-4ddd-8f11-f1f01137f13b/resourceGroups/appsvc_linux_centralus/providers/Microsoft.Web/sites/CS-312-HW-4-Todoapp",
+    "appService.deploySubpath": "."
+}

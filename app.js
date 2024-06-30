@@ -1,4 +1,6 @@
 // includes
+// https://cs-312-hw-4-todoapp.azurewebsites.net/
+
 const express = require("express");
 const bodyParser = require("body-parser");
 // include the date.js file that holds the 2 date functions
@@ -166,8 +168,14 @@ app.post("/delete", function(req, res) {
 app.get("/about", function(req, res){
     res.render("about");
 })
+let port = process.env.PORT;
+if(port == null || port == ""){
+    port = 3000;
+}
+
+app.listen(port);
 
 // display server log
-app.listen(3000, function(){
-    console.log("Server running on port 3000");
+app.listen(port, function(){
+    console.log("Server has started successfully");
 });
